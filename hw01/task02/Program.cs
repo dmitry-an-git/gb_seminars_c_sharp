@@ -7,10 +7,10 @@ Console.Write("Please enter the second number: ");
 int b = Convert.ToInt32(Console.ReadLine());
 
 if (a>b)
-    Console.WriteLine($"The first number ({a}) is max");
-    Console.WriteLine($"The second number ({b}) is min");
+    {Console.WriteLine($"The first number ({a}) is max");
+    Console.WriteLine($"The second number ({b}) is min");}
 else if (a<b)
-    Console.WriteLine($"The second number ({b}) is max");
-    Console.WriteLine($"The first number ({a}) is min");
+    {Console.WriteLine($"The second number ({b}) is max");
+    Console.WriteLine($"The first number ({a}) is min");}
 else
     Console.WriteLine($"The numbers are equal ({a}={b})");    
