@@ -51,9 +51,9 @@ if (n < 100)
     Console.WriteLine("В этом числе меньше трех цифр");
 else 
 {
-    if (n > 1000)
+    if (n > 999)
     {
-        while (n > 1000)
+        while (n > 999)
             n = n/10;
     }
 

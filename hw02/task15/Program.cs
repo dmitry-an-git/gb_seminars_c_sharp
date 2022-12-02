@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// task 15
 Console.Clear();
 
 int a = 0;
