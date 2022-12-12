@@ -1,6 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// task extra 02
+// goldbach conjecture
 
-int input()
+int input() 
 {
     bool success = false;
     int n=-1;
