@@ -4,29 +4,22 @@
 
 void DiagonalFill(int[,] matrix, int start_m = 0, int start_n = 0, int count = 0)
 {   
-    bool InRange(int[,] matrix, int start_m,int start_n)
-    {
-        return (
-           start_m>-1 
-        && start_n>-1
-        && start_m<matrix.GetLength(0)
-        && start_n<matrix.GetLength(1));
-    }
-
     if (count == matrix.GetLength(0)*matrix.GetLength(1))
         return;
 
-    if (InRange(matrix,start_m,start_n))
-    {
-        matrix[start_m, start_n]=count;
-        count++;
-    }
+    if (start_m>-1 
+        && start_n>-1
+        && start_m<matrix.GetLength(0)
+        && start_n<matrix.GetLength(1))
+        {
+            matrix[start_m, start_n]=count;
+            count++;
+        }
     
     int next_m = (start_m + 1) % matrix.GetLength(0);
     int next_n = (start_n - 1) + ((start_m + 1 )/ matrix.GetLength(0))*(matrix.GetLength(0)+1);
     
     DiagonalFill(matrix,next_m,next_n,count);
-
 }
 
 void PrintMatrix(int[,] someMatrix)
