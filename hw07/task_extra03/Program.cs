@@ -4,7 +4,7 @@
 
 void DiagonalFill(int[,] matrix, int start_m = 0, int start_n = 0, int count = 0)
 {   
-    bool InRange(int[,] matrix, int start_m = 0,int start_n = 0)
+    bool InRange(int[,] matrix, int start_m,int start_n)
     {
         return (
            start_m>-1 
