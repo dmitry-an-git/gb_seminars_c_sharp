@@ -5,6 +5,7 @@
 // 12 13 14 05
 // 11 16 15 06
 // 10 09 08 07
+// i hope that 01 is the same as 1
 
 void FillClockwise(int[,] array, int start_m = 0, int start_n = 0, int counter = 1, int rule = 0)
 {   
